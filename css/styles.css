@@ -1,0 +1,206 @@
+/* другорядний колір тексту  #212121  */
+/* основний колір тексту #757575 */
+/* акцент #2196F3  */
+/* білий #FFFFFF */
+/* фон #F5F5F5 */
+/* другорядний фон #F5F4FA */
+/* фон футер герой #2F303A */
+/* другорядний текст футер rgba(255, 255, 255, 0.6) */
+/*  логотип хедер #000000 #2196F3 */
+/* логотип футер #2196F3 #FFFFFF */
+/* фон кнопкі #F5F4FA */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #F5F5F5;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+/* 1. header */
+
+.header-pagination .header-pagination-item.current,
+.header-pagination .header-pagination-item.current {
+    color: var(--accent-color);
+}
+
+
+/* 1.1. header-nav */
+
+.logo {
+    cursor: default;
+
+    color:var(--accent-color);
+    
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.header-logo-accent {
+    color:var(--title-text-color);
+}
+
+
+.header-pagination-item {
+    color: var(--title-text-color);
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-pagination-item:hover {
+    color:var(--accent-color);
+}
+
+.header-pagination-item:focus {
+    color:var(--accent-color);
+}
+
+/* 1.2. header-contacts */
+
+.header-contacts-item {
+    color:var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-contacts-item:hover {
+    color: var(--accent-color);
+}
+
+.header-contacts-item:focus {
+    color: var(--accent-color);
+}
+/* 2. main */
+
+/* 2.1. section-hero */
+
+.hero-title {
+    color: #FFFFFF;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button {
+    color:#FFFFFF;
+}
+
+/* 2.2. section-Приорітети в роботі компанії */
+
+.section-subtitle {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* 2.3. section-Чим ми займаємося */
+
+.section-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* 2.3. section-Наша команда */
+.section-subject {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* 3. footer */
+
+.footer-logo-accent {
+    color: #FFFFFF;
+}
+
+.footer-contacts {
+    cursor: default;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address {
+    cursor: default;
+
+    color: #FFFFFF;
+}
+
+
+/* 4. main-portfolio */
+
+.main-portfolio-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    color: var(--title-text-color);
+
+    background-color: #F5F4FA;
+}
+
+
+.main-portfolio-button:hover:focus {
+
+    color: #FFFFFF;
+
+    background-color: var(--accent-color);
+
+    cursor: pointer;
+}
+
+.main-portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--title-text-color);
+}
+
+.main-portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    
+    color: #757575;
+}
