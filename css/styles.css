@@ -2,19 +2,24 @@
 /* основний колір тексту #757575 */
 /* акцент #2196F3  */
 /* білий #FFFFFF */
-/* фон #F5F5F5 */
+/* фон #FFFFFF */
 /* другорядний фон #F5F4FA */
 /* фон футер герой #2F303A */
 /* другорядний текст футер rgba(255, 255, 255, 0.6) */
 /*  логотип хедер #000000 #2196F3 */
 /* логотип футер #2196F3 #FFFFFF */
 /* фон кнопкі #F5F4FA */
+/* minor */
 
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --primary-white-color: #F5F5F5;
+    --primary-white-color: #FFFFFF;
+    --minor-white-color: #F5F4FA;
+    --hero-footer-background-color: #2F303A;
+    --footer-text-color:rgba(255, 255, 255, 0.6);
+    --header-logo: #000000;
 }
 
 body {
@@ -22,7 +27,6 @@ body {
     color: var(--primary-text-color);
 
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -30,6 +34,7 @@ body {
 
 .list {
     list-style: none;
+    
 }
 
 /* 1. header */
@@ -37,6 +42,7 @@ body {
 .header-pagination .header-pagination-item.current,
 .header-pagination .header-pagination-item.current {
     color: var(--accent-color);
+    text-decoration: none;
 }
 
 
@@ -51,10 +57,11 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
 }
 
 .header-logo-accent {
-    color:var(--title-text-color);
+    color:var(--header-logo);
 }
 
 
@@ -65,6 +72,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .header-pagination-item:hover {
@@ -84,6 +92,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .header-contacts-item:hover {
@@ -97,8 +106,12 @@ body {
 
 /* 2.1. section-hero */
 
+.hero {
+    background-color: var(--hero-footer-background-color);
+}
+
 .hero-title {
-    color: #FFFFFF;
+    color: var(--primary-white-color);
     
     font-weight: 900;
     font-size: 44px;
@@ -109,7 +122,8 @@ body {
 }
 
 .hero-button {
-    color:#FFFFFF;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }
 
 /* 2.2. section-Приорітети в роботі компанії */
@@ -150,21 +164,37 @@ body {
 
 /* 3. footer */
 
+.footer {
+    background-color: var(--hero-footer-background-color);
+
+}
+
 .footer-logo-accent {
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 
 .footer-contacts {
     cursor: default;
     
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-text-color);
+
+    text-decoration: none;
 }
 
 .footer-address {
     cursor: default;
 
-    color: #FFFFFF;
+    color: var(--primary-white-color);
+
+    text-decoration: none;
+    
 }
+
+.address {
+    display: inline;
+    font-style: normal;
+}
+
 
 
 /* 4. main-portfolio */
@@ -176,13 +206,14 @@ body {
 
     color: var(--title-text-color);
 
-    background-color: #F5F4FA;
+    background-color: var(--minor-white-color);
 }
 
 
-.main-portfolio-button:hover:focus {
+.main-portfolio-button:hover, 
+.main-portfolio-button:focus {
 
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 
     background-color: var(--accent-color);
 
