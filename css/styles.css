@@ -124,6 +124,12 @@ body {
 .hero-button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
 }
 
 /* 2.2. section-Приорітети в роботі компанії */
@@ -200,9 +206,11 @@ body {
 /* 4. main-portfolio */
 
 .main-portfolio-button {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
 
     color: var(--title-text-color);
 
